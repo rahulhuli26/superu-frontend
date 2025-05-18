@@ -12,7 +12,7 @@ export default function Signin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await api.post('/auth/signin', { email, password });
+      const response = await api.post('api/auth/signin', { email, password });
       const { token, user } = response.data;
       console.log('------>',response, token, user)
        // Store in sessionStorage or localStorage

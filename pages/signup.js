@@ -14,7 +14,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await api.post('/auth/signup', { name, email, password });
+      let response = await api.post('api/auth/signup', { name, email, password });
       router.push('/signin');
     } catch (err) {
       alert('Error while registering, Try with different email!');
