@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import TiptapEditor from "@/components/TiptapEditor";
-import FileTree from "@/components/FileTree";
-import api from "@/utils/api";
+import TiptapEditor from "../../../components/Editor";
+import FileTree from "../../../components/FileTree";
+import api from "../../../utils/api";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 export default function EditPage() {
